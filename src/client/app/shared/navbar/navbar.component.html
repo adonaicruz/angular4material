@@ -1,4 +1,7 @@
-<nav>
-  <a [routerLink]="['/']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">HOME</a>
-  <a [routerLink]="['/about']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">ABOUT</a>
-</nav>
+<md-toolbar color="primary" class="mat-elevation-z4"> 
+  <a  md-button  [routerLink]="['/']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">HOME</a>
+  <a  md-button [routerLink]="['/users']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">USERS</a>
+  <a  md-button [routerLink]="['/logout']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">LOGOUT</a>
+  <span class="spacer"></span>
+  <span>Angular 4 - User Admin</span>
+</md-toolbar>

@@ -1,0 +1,23 @@
+<div class="content">
+<md-card class="login-card mat-elevation-z8">
+
+  <md-toolbar color="primary">Login</md-toolbar>
+  <md-card-content>
+    <div>
+        <md-input-container>
+          <input mdInput  required [(ngModel)]="user.login" placeholder="Login" />
+        </md-input-container>
+        <md-input-container>
+          <input mdInput  required [(ngModel)]="user.password" type="password" placeholder="Password" />
+        </md-input-container>
+    </div>
+    
+    
+  </md-card-content>
+  <md-card-actions>
+    <button type="submit" (click)="login()" md-raised-button color="primary">LOGIN</button>
+    <button md-button>CADASTRO</button>
+  </md-card-actions>
+</md-card>
+
+</div>

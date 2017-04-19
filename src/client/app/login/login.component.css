@@ -1,0 +1,12 @@
+.login-card{
+    width: 380px;
+    margin: 0 auto;
+    padding-top:0px;
+}
+md-toolbar{
+    margin:0 -24px 16px -24px;
+    width:  calc(100% + 48px);
+}
+md-input-container{
+    width: 100%;
+}

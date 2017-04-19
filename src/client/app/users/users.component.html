@@ -1,0 +1,53 @@
+<div fxLayout="row" >
+  <div fxFlex class="container">
+    
+      <h2>Usuários</h2>
+      
+      <md-card>
+        <md-input-container floatPlaceholder="always">
+          <input mdInput #searchBox placeholder="Filtrar" id="search-box" (keyup)="search(searchBox.value)" />
+        </md-input-container>
+        <div fxLayout="row" class="table" *ngFor="let user of users">
+            <div fxFlex>{{user.name}}</div>
+            <div fxFlex>{{user.login}}</div>
+            <div fxFlex>{{user.password}}</div>
+            <div fxFlex>{{user.group}}</div>
+        </div>
+      </md-card>
+  </div>
+  <div fxFlex class="container" [hidden]="currentUser.group == 'USER'">
+    <h2>Cadastrar</h2>
+    <md-card>
+      <form #userForm="ngForm" (submit)="create()">
+        
+        <div fxLayout="column" >
+          <div fxLayout="row" fxLayoutAlign="space-around center">
+            <md-input-container fxFlex>
+              <input mdInput [(ngModel)]="user.name" name="name" placeholder="Nome">
+            </md-input-container>
+            
+            <md-radio-group fxFlex name="group" [(ngModel)]="user.group">
+              <md-radio-button value="USER">USER</md-radio-button>
+              <md-radio-button value="ADMIN">ADMIN</md-radio-button>
+            </md-radio-group>
+          </div>
+
+          <div fxLayout="row">
+            <md-input-container fxFlex>
+              <input mdInput [(ngModel)]="user.login" name="login" placeholder="Login" required>
+            </md-input-container>
+            <md-input-container fxFlex>
+              <input mdInput [(ngModel)]="user.password" type="password" name="senha" placeholder="Senha" required>
+            </md-input-container>
+          </div>
+          <button type="submit" [disabled]="!userForm.valid">Enviar</button>
+        </div>
+        
+      </form>
+      <!--<button type="button" (click)="save()">Enviar</button>-->
+    </md-card>
+  </div>
+  
+</div>
+
+  

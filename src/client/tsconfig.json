@@ -24,7 +24,9 @@
     "types": [
       "node",
       "jasmine",
-      "systemjs"
+      "systemjs",
+      "angularfire2",
+      "firebase"
     ]
   },
   "compileOnSave": false
