@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Introduction
 
 [![Angular Style Guide](https://mgechev.github.io/angular2-style-guide/images/badge.svg)](https://angular.io/styleguide)
@@ -665,3 +666,7 @@ You can follow the [Angular change log here](https://github.com/angular/angular/
 # License
 
 MIT
+=======
+# angular4material2
+Aplicação teste com Angular 4 e Angular Material 2
+>>>>>>> 478f68c149064f1eddfd5490079dc5dcfcd7543d
