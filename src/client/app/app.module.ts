@@ -11,6 +11,7 @@ import { InMemoryDataService }  from './in-memory-data.service';
 import { AboutModule } from './about/about.module';
 import { HomeModule } from './home/home.module';
 import { UsersModule } from './users/users.module';
+import { TestModule } from './test/test.module';
 import { SharedModule } from './shared/shared.module';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './login/logout.component';
@@ -31,6 +32,7 @@ import { AuthGuard } from './guards/auth.guard';
     AboutModule, 
     HomeModule, 
     UsersModule, 
+    TestModule,
     SharedModule.forRoot(),
     MaterialModule.forRoot(),
     InMemoryWebApiModule.forRoot(InMemoryDataService)
