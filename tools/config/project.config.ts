@@ -70,6 +70,15 @@ export class ProjectConfig extends SeedConfig {
       }
     });
     
+        
+    this.addPackageBundles({
+      name:'@swimlane/ngx-datatable',
+      path:'node_modules/@swimlane/ngx-datatable/release/index.js',
+      packageMeta:{
+        main: 'index.js',
+        defaultExtension: 'js'
+      }
+    });
 
     // let additionalPackages: ExtendPackages[] = [{
     //   name: '@angular/material',

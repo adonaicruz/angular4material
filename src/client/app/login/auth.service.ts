@@ -1,6 +1,5 @@
 import { Injectable, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
-// import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { UsersService } from '../users/users.service';
 import 'rxjs/Rx';
 
@@ -10,7 +9,7 @@ export class AuthService {
   private user:any[];
   private isAuthenticated: boolean = false;
   authenticatedEmitter = new EventEmitter<boolean>();
-  // constructor(private af:AngularFire) { }
+
   constructor(public us: UsersService,private router: Router) {
     this.authenticatedEmitter.emit(true);
     
